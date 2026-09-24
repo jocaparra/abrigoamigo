@@ -63,6 +63,13 @@ h3 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em; }
 .link:hover { text-decoration-color: var(--heart); }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 2rem; }
 
+/* ---------- Aviso no topo ---------- */
+.alert { background: var(--heart); color: var(--white); font-size: .98rem; line-height: 1.4; }
+.alert__inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 4px 14px; padding-top: 10px; padding-bottom: 10px; text-align: center; }
+.alert a { font-weight: 600; text-underline-offset: 4px; text-decoration-thickness: 2px; }
+.alert a:hover { text-decoration-color: var(--ice); }
+.alert :focus-visible { outline-color: var(--white); }
+
 /* ---------- Navegação ---------- */
 .nav { position: sticky; top: 0; z-index: 50; background: rgb(244 247 250 / .92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--ice); }
 .nav__bar { display: flex; align-items: center; justify-content: space-between; min-height: 72px; gap: 16px; }
