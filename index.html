@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abrigo Amigo</title>
+  <meta name="description" content="Amparamos animais em situação de rua e maus-tratos, do resgate à adoção, por amor.">
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--
+  COMO TROCAR AS FOTOS
+  Cada espaço de foto tem um <img src="assets/...">. Salve a foto da Instagram
+  com o mesmo nome dentro de /assets e ela aparece sozinha. Enquanto o arquivo
+  não existir, o espaço mostra o placeholder azul-gelo.
+-->
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="nav" id="topo">
+  <div class="wrap nav__bar">
+    <a class="brand" href="#topo" aria-label="Abrigo Amigo, início">
+      <img class="brand__logo" src="assets/logo.jpg" alt="" width="48" height="48">
+      <span class="brand__name">Abrigo Amigo</span>
+    </a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="nav__menu" id="menu" aria-label="Principal">
+      <a href="#adotar">Adotar</a>
+      <a href="#apadrinhar">Apadrinhar</a>
+      <a href="#transparencia">Contas</a>
+      <a href="#doar">Doar</a>
+      <a href="#sobre">Quem somos</a>
+      <a class="btn btn--heart btn--sm" href="#doar">Quero ajudar</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__text">
+        <h1>Do resgate à adoção, por amor.</h1>
+        <p class="lead">O Abrigo Amigo acolhe animais em situação de rua e vítimas de maus-tratos, cuida de cada um e ajuda a encontrar uma família para todos.</p>
+        <div class="actions">
+          <a class="btn btn--deep" href="#adotar">Quero adotar</a>
+          <a class="btn btn--line" href="#doar">Quero ajudar</a>
+        </div>
+      </div>
+
+      <div class="hero__arches" aria-hidden="true">
+        <figure class="arch arch--a ph"><img src="assets/hero-1.jpg" alt="" onerror="this.remove()"></figure>
+        <figure class="arch arch--b ph"><img src="assets/hero-2.jpg" alt="" onerror="this.remove()"></figure>
+        <figure class="arch arch--c ph"><img src="assets/hero-3.jpg" alt="" onerror="this.remove()"></figure>
+      </div>
+    </div>
+
+    <a class="hero__strip" href="https://www.instagram.com/abrigoamigo/" target="_blank" rel="noopener">
+      <span>Mais de 55 mil pessoas acompanham os resgates no Instagram</span>
+      <span class="hero__strip-cta">@abrigoamigo</span>
+    </a>
+  </section>
+
+  <!-- ADOTAR -->
+  <section class="section" id="adotar">
+    <div class="wrap">
+      <header class="section__head">
+        <h2>Cada um deles espera por uma casa</h2>
+        <p>Conheça alguns dos animais que estão prontos para ir para casa. Veja todos no nosso Instagram.</p>
+      </header>
+
+      <ul class="dogs">
+        <li class="dog"><figure class="arch ph"><img src="assets/dog-1.jpg" alt="Cachorro disponível para adoção" loading="lazy" onerror="this.remove()"></figure></li>
+        <li class="dog"><figure class="arch ph"><img src="assets/dog-2.jpg" alt="Cachorro disponível para adoção" loading="lazy" onerror="this.remove()"></figure></li>
+        <li class="dog"><figure class="arch ph"><img src="assets/dog-3.jpg" alt="Cachorro disponível para adoção" loading="lazy" onerror="this.remove()"></figure></li>
+        <li class="dog"><figure class="arch ph"><img src="assets/dog-4.jpg" alt="Cachorro disponível para adoção" loading="lazy" onerror="this.remove()"></figure></li>
+      </ul>
+
+      <p class="dogs__cta"><a class="btn btn--heart" href="https://www.instagram.com/abrigoamigo/" target="_blank" rel="noopener">Adote-já!</a></p>
+
+      <div class="steps">
+        <h3 class="steps__title">Como adotar</h3>
+        <!-- EDITAR: ajustar as etapas ao processo real da ONG -->
+        <ol class="steps__list">
+          <li><strong>Escolha um animal</strong><span>Veja quem está disponível e quem combina com a sua rotina.</span></li>
+          <li><strong>Preencha o formulário</strong><span>Conte como é sua casa e sua família. Leva poucos minutos.</span></li>
+          <li><strong>Converse com a equipe</strong><span>Tiramos dúvidas e confirmamos se é o par certo.</span></li>
+          <li><strong>Leve para casa</strong><span>Combinamos a entrega e seguimos por perto depois.</span></li>
+        </ol>
+        <a class="btn btn--deep" href="https://www.instagram.com/abrigoamigo/" target="_blank" rel="noopener">Pedir o formulário de adoção</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- APADRINHAR -->
+  <section class="section section--ice" id="apadrinhar">
+    <div class="wrap split">
+      <figure class="arch arch--wide ph"><img src="assets/apadrinhar.jpg" alt="" onerror="this.remove()"></figure>
+      <div class="split__text">
+        <h2>Não pode adotar? Apadrinhe.</h2>
+        <p>Padrinhos e madrinhas ajudam todo mês com a comida, o remédio e a consulta de um animal que ainda espera pela família. Você acompanha a evolução dele e sabe para onde vai a sua ajuda.</p>
+        <a class="btn btn--deep" href="https://www.instagram.com/abrigoamigo/" target="_blank" rel="noopener">Quero apadrinhar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSPARENCIA -->
+  <section class="section" id="transparencia">
+    <div class="wrap">
+      <header class="section__head">
+        <h2>Resgates suspensos até quitarmos as contas</h2>
+        <p>Por trás de cada resgate existe uma conta. Hoje o Abrigo Amigo deve mais de R$&nbsp;35&nbsp;mil e não consegue abrir espaço para novos animais enquanto essas dívidas não forem pagas.</p>
+      </header>
+
+      <div class="bar" role="img" aria-label="Dívidas a quitar: R$ 20 mil com a Bella Vet, R$ 10 mil com os hotéis parceiros e R$ 3 mil com a veterinária Carol">
+        <span class="bar__seg bar__seg--1" style="--p:20"></span>
+        <span class="bar__seg bar__seg--2" style="--p:10"></span>
+        <span class="bar__seg bar__seg--3" style="--p:3"></span>
+      </div>
+      <ul class="legend">
+        <li>
+          <i class="sw sw--1"></i>
+          <b>R$ 20 mil</b>
+          <strong>Bella Vet</strong>
+          <span>Nossa clínica parceira, que segue ajudando mesmo com a dívida.</span>
+        </li>
+        <li>
+          <i class="sw sw--2"></i>
+          <b>R$ 10 mil</b>
+          <strong>Hotéis parceiros</strong>
+          <span>Onde ficam os cães de porte médio e grande que ninguém oferece lar temporário, como Perdita, Marta, Olavo, Stark e Maria Helena.</span>
+        </li>
+        <li>
+          <i class="sw sw--3"></i>
+          <b>R$ 3 mil</b>
+          <strong>Carol, veterinária</strong>
+          <span>Faz os atendimentos a domicílio.</span>
+        </li>
+      </ul>
+      <p class="debt__cta"><a class="btn btn--heart" href="#doar">Quero ajudar a quitar</a></p>
+    </div>
+  </section>
+
+  <!-- DOAR -->
+  <section class="section section--deep" id="doar">
+    <div class="wrap donate">
+      <div class="donate__intro">
+        <h2>Sua doação ajuda a reabrir os resgates</h2>
+        <p>Escolha um valor. Toda ajuda, pequena ou grande, paga as contas de clínica, hotéis e veterinária e nos aproxima de voltar a resgatar.</p>
+      </div>
+
+      <div class="donate__box">
+        <h3 class="donate__title">Quanto você quer doar?</h3>
+        <!-- Todos os valores levam ao mesmo link de pagamento PIX. -->
+        <ul class="tiers">
+          <li><a class="tier" href="https://geradordepix.com/pagamento/01M3ADMDVAWHAGM67PWQDV3RSJ" target="_blank" rel="noopener">
+            <span class="tier__amount">R$ 30</span>
+          </a></li>
+          <li><a class="tier" href="https://geradordepix.com/pagamento/01M3ADMDVAWHAGM67PWQDV3RSJ" target="_blank" rel="noopener">
+            <span class="tier__amount">R$ 80</span>
+          </a></li>
+          <li><a class="tier" href="https://geradordepix.com/pagamento/01M3ADMDVAWHAGM67PWQDV3RSJ" target="_blank" rel="noopener">
+            <span class="tier__amount">R$ 150</span>
+          </a></li>
+          <li><a class="tier" href="https://geradordepix.com/pagamento/01M3ADMDVAWHAGM67PWQDV3RSJ" target="_blank" rel="noopener">
+            <span class="tier__amount">Outro valor</span>
+          </a></li>
+        </ul>
+        <p class="donate__hint">Ao escolher, você abre a página de pagamento por PIX.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section section--ice" id="sobre">
+    <div class="wrap split split--rev">
+      <div class="split__text">
+        <h2>Quem somos</h2>
+        <p>O Abrigo Amigo é uma organização sem fins lucrativos que ampara animais em situação de rua e vítimas de maus-tratos, do resgate à adoção.</p>
+        <p>Cada animal recebe alimento, atendimento veterinário e carinho até encontrar uma família. O trabalho acontece com voluntários, doadores e adotantes que acreditam que ninguém precisa ficar sem lar.</p>
+        <a class="btn btn--line" href="https://www.instagram.com/abrigoamigo/" target="_blank" rel="noopener">Seguir no Instagram</a>
+      </div>
+      <figure class="arch arch--wide arch--group ph"><img src="assets/sobre.jpg" alt="" onerror="this.remove()"></figure>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <img class="brand__logo" src="assets/logo.jpg" alt="" width="56" height="56">
+      <p>Amparamos animais em situação de rua e maus-tratos, do resgate à adoção, por amor.</p>
+    </div>
+    <nav class="footer__nav" aria-label="Rodapé">
+      <a href="#adotar">Adotar</a>
+      <a href="#apadrinhar">Apadrinhar</a>
+      <a href="#transparencia">Contas</a>
+      <a href="#doar">Doar</a>
+      <a href="#sobre">Quem somos</a>
+    </nav>
+    <div class="footer__contact">
+      <a href="https://www.instagram.com/abrigoamigo/" target="_blank" rel="noopener">Instagram @abrigoamigo</a>
+      <!-- EDITAR: adicionar e-mail, telefone e cidade -->
+    </div>
+  </div>
+  <p class="wrap footer__legal">Abrigo Amigo. CNPJ 49.744.718/0001-81. Todos os direitos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
